@@ -1,22 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Ismael's Music</title>
+<title>Music world</title>
 <meta charset="UTF-8">
 <style>
 * {
-box-sizing: border-box;}
+box-sizing: border-box;
+}
 body {
 font-family: "Times New Roman", Times, serif;
-margin: 0;}
-
-.header {
-padding: 80px;
-text-align: center;
-background:  #4da6ff;
-color: white;}
-.header h1 {
-font-size: 40px;
+margin: 0;
 }
 .navbar {
 overflow: hidden;
@@ -42,9 +35,36 @@ display: flex;
 flex-wrap: wrap;
 }
 .imgDiv {
-flex: 20%;
+flex: 50%;
 background-color: #f1f1f1;
 padding: 20px;
+}
+.imgcontent {
+flex: 50%;
+background-color: #f1f1f1;
+padding: 20px;
+text-align: center;
+font-family: ui-sans-serif;
+font-size: 30px;
+}
+.innerDiv{
+padding: 20px;
+border:1px solid;
+border-color:grey;
+height:500px;
+}
+.buyDiv{
+display: flex;
+flex-wrap: wrap;
+flex: 100%;
+padding: 20px;
+padding-left: 45%;
+}
+button{
+background-color:#008000b3;
+color:white;
+height:40px;
+width:120px;
 }
 .musicimg {
 background-image: url(thenx.jpg);
@@ -60,6 +80,10 @@ padding: 20px;
 text-align: center;
 background: #4da6ff;
 }
+button{
+float:right;
+height:40px;
+}
 @media screen and (max-width: 700px) {
 .row {   
 flex-direction: column;
@@ -74,61 +98,28 @@ width:100%;
 </style>
 </head>
 <body>
-<div class="header">
-<h1>Ismael's Music</h1>
-<p>Music is Haram , brother </p>
-</div>
 <div class="navbar">
 <a href="listPage.html">Heria music </a> 
 <a href="listPage.html">Thenx music </a>
 <a href="listPage.html">NCS music </a> 
 <a href="index.html" class="right">Home</a> 
 </div>
-
-    
-    
-<div class="row">
-    
-<div class="imgDiv" >
-    <a href="detailPage.html">
-<div class="musicimg" style="height:200px;" >Hot and New  </div>
-</div>
-        
-        </a>
-<div class="imgDiv">
-    <a href="detailPage.html">
-<div class="musicimg" style="height:200px;">Hot and New</div>
-</div>
-<div class="imgDiv">
-    <a href="detailPage.html">
-<div class="musicimg" style="height:200px;">Hot and New</div>
-</div>
-<div class="imgDiv">
-    <a href="detailPage.html">
-<div class="musicimg" style="height:200px;">Hot and New</div>
-</div>
-</div>
 <div class="row">
 <div class="imgDiv">
-    <a href="detailPage.html">
-<div class="musicimg" style="height:200px;">Hot and New</div>
+<div class="musicimg" style="height:500px;">Music1</div>
 </div>
-<div class="imgDiv">
-    <a href="detailPage.html">
-<div class="musicimg" style="height:200px;">Hot and New</div>
+<div class="imgcontent">
+<div class="innerDiv">
+<label>RUN IT</label></br></br>
+<label>Lyrics writer: </label><span> Chris heria</span></br></br>
+<label>Song length: </label><span> 2.5 minutes </span></br></br>
+<label>Market Price: </label><span> 3 $ </span></br></br>
 </div>
-<div class="imgDiv">
-    <a href="detailPage.html">
-<div class="musicimg" style="height:200px;">Hot and New</div>
 </div>
- <div class="imgDiv">
-     <a href="detailPage.html">
-<div class="musicimg" style="height:200px;">Hot and New</div>
-</div>   
 </div>
-
-
-
+<div class="buyDiv">
+<button>Buy IT</button>
+</div>
 <div class="footer">
 <h2>Ismael's&copy;music</h2>
 </div>
